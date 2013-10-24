@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".GPSlocActivity" >
+    
+    <Button
+        android:id="@+id/list"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bottom"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/buttonlonggreen"
+        android:onClick="viewPizza"
+        android:text="Go Back :)" />
+
+<com.google.android.maps.MapView 
+    android:id="@+id/mapView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:enabled="true"
+    android:clickable="true"
+    android:apiKey="0tiQnjvJNHyh9tZjWOEd_ljGlEGTR-3GCwh_eNA"
+    />
+
+</LinearLayout>

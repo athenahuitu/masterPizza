@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ui4" >
+    
+    <ImageView
+        android:id="@+id/bottom"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/woodc" />
+    
+    <Button
+        android:id="@+id/next"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bottom"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/black_circle_right"
+        android:onClick="pizzaDone"/>
+
+    <Button
+        android:id="@+id/prev"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/next"
+        android:layout_alignBottom="@+id/next"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/black_circle_left"
+        android:onClick="chooseCheese" />
+
+    <Button
+        android:id="@+id/beef_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/meat1"
+        android:onClick="onBeef"  />
+
+    <Button
+        android:id="@+id/lamb_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/meat2"
+        android:onClick="onLamb" />
+
+    <Button
+        android:id="@+id/shrimp_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/meat3"
+        android:onClick="onShrimp"  />
+
+</RelativeLayout>

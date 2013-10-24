@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MasterPizza</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MasterPizza</string>
+    <string name="title_activity_choose_crust">ChooseCrustActivity</string>
+    <string name="title_activity_choose_sauce">ChooseSauceActivity</string>
+    <string name="title_activity_choose_cheese">ChooseCheeseActivity</string>
+    <string name="title_activity_choose_meat">ChooseMeat</string>
+    <string name="title_activity_pizza_done">PizzaDoneActivity</string>
+    <string name="title_activity_list_saved_pizza">ListSavedPizzaActivity</string>
+    <string name="title_activity_view_pizza">ViewPizzaActivity</string>
+    <string name="title_activity_gpsloc">GPSlocActivity</string>
+    <string name="title_activity_save_pizza">SavePizzaActivity</string>
+    <string name="title_activity_add_pic_and_voice">AddPicAndVoiceActivity</string>
+    <string name="title_activity_list_restaurant">ListRestaurantActivity</string>
+    <string name="title_activity_choose_fruit">ChooseFruitActivity</string>
+
+</resources>

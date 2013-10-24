@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+   android:id="@+id/pizzaTextView" android:layout_width="match_parent"
+   android:layout_height="wrap_content" android:padding="8dp"
+   android:textSize="20sp" android:textColor="@android:color/black"
+   android:background="@android:color/white"
+   android:minHeight="?android:attr/listPreferredItemHeight"
+   android:gravity="center_vertical"></TextView>
+
+    <!-- <Button
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="backToMain"
+        android:text="Go back Homepage :)" /> -->
+
+</RelativeLayout>

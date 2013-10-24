@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cmu.teamCooper.masterpizza"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+    
+    
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+        
+        <service
+            android:name=".BackgroundMusicService" />
+
+        <activity
+            android:name="cmu.teamCooper.masterpizza.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".createpizza.ChooseCrustActivity"
+            android:label="@string/title_activity_choose_crust" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.MainActivity" />
+        </activity>
+        <activity
+            android:name=".createpizza.ChooseSauceActivity"
+            android:label="@string/title_activity_choose_sauce" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.ChooseCrustActivity" />
+        </activity>
+        <activity
+            android:name=".createpizza.ChooseCheeseActivity"
+            android:label="@string/title_activity_choose_cheese" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.ChooseSauceActivity" />
+        </activity>
+        <activity
+            android:name=".createpizza.ChooseMeatActivity"
+            android:label="@string/title_activity_choose_meat" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.ChooseCheeseActivity" />
+        </activity>
+        <activity
+            android:name=".createpizza.PizzaDoneActivity"
+            android:label="@string/title_activity_pizza_done" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.ChooseMeatActivity" />
+        </activity>
+        <activity
+            android:name=".savepizza.ListSavedPizzaActivity"
+            android:label="@string/title_activity_list_saved_pizza" >
+        </activity>
+        <activity
+            android:name=".savepizza.ViewPizzaActivity"
+            android:label="@string/title_activity_view_pizza" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.ListSavedPizzaActivity" />
+        </activity>
+        <activity
+            android:name=".gps.GPSlocActivity"
+            android:label="@string/title_activity_gpsloc" >
+        </activity>
+        <activity
+            android:name=".savepizza.SavePizzaActivity"
+            android:label="@string/title_activity_save_pizza" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.MainActivity" />
+        </activity>
+        <activity
+            android:name=".savepizza.AddPicAndVoiceActivity"
+            android:label="@string/title_activity_add_pic_and_voice" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.PizzaDoneActivity" />
+        </activity>
+        <activity
+            android:name=".gps.ListRestaurantActivity"
+            android:label="@string/title_activity_list_restaurant" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.AddPicAndVoiceActivity" />
+        </activity>
+        <activity
+            android:name="cmu.teamCooper.masterpizza.createpizza.MiniGameActivity"
+            android:label="@string/title_activity_choose_fruit" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cmu.teamCooper.masterpizza.AddPicAndVoiceActivity" />
+        </activity>
+        
+        <activity android:name="cmu.teamCooper.masterpizza.twitter.PrepareRequestTokenActivity" android:launchMode="singleTask">>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="x-oauthflow-twitter" android:host="callback" />
+			</intent-filter>
+		</activity>
+		
+    </application>
+
+</manifest>

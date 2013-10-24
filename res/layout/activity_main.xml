@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ui1" >
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/ButtonText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/button01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/pinkbutton"
+        android:onClick="chooseCrust"
+        android:text="Create A Pizza" />
+
+    <Button
+        android:id="@+id/button01"
+        style="@style/ButtonText"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pinkbutton"
+        android:onClick="myPizza"
+        android:text="My Pizza" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/pizza_a" />
+
+</RelativeLayout>

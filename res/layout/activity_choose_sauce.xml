@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uisauce" >
+
+    <!-- android:onClick="chooseCheese" -->
+
+    <ImageView
+        android:id="@+id/bottom"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="52dp"
+        android:src="@drawable/woodc" />
+
+    <Button
+        android:id="@+id/prev"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bottom"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/black_circle_left"
+        android:onClick="chooseCrust" />
+
+    <Button
+        android:id="@+id/next"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bottom"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/black_circle_right"
+        android:onClick="chooseCheese" />
+
+    <Button
+        android:id="@+id/tomato_icon"
+        android:background="@drawable/tomato_icon"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/prev"
+        android:text="tomato"
+        android:onClick="tomatoOnClick" />
+
+    <Button
+        android:id="@+id/pesto_icon"
+        android:background="@drawable/pesto_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="pesto"
+        android:onClick="pestoOnclick" />
+
+    <Button
+        android:id="@+id/mixsauce_icon"
+        android:background="@drawable/mix_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/next"
+        android:text="mix"
+        android:onClick="mixOnclick" />
+ 
+</RelativeLayout>
